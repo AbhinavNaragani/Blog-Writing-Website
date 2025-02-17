@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<h2> The stories that Flew 🕊️ </h2>
+
+<% if (blogs && blogs.length > 0) { %>
+  <% blogs.forEach((blog, index) => { %> <!-- Changed 'blogs' to 'blog' -->
+    <div class="story">
+      <h4> Title: <%= blog.title %></h4> <!-- Changed 'blogs.title' to 'blog.title' -->
+      <p><%= blog.content %></p> <!-- Changed 'blogs.content' to 'blog.content' -->
+      <div class="buttonContainer">
+      <form action="/delete" method="POST">
+        <input type="hidden" name="index" value="<%= index %>">
+        <input class="deleteButton" type="submit" value="Delete story">
+      </form>
+
+      <form action="/edit" method="GET">
+        <input type="hidden" name="index" value="<%= index %>">
+        <input class="editStory" type="submit" value="Edit Story">
+      </form>
+      
+      </div>
+    </div>
+  <% }) %>
+<% } else { %>
+  <h4>No stories submitted yet.</h4>
+<% } %>

@@ -1,0 +1,28 @@
+header {
+  background-color: #95c9f1; /* Soft blue for E3F2FD a calm vibe */
+  border-bottom: 2px solid #BBDEFB; /* Light accent */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.logo {
+  margin-left: 0px;
+}
+
+header a, 
+header .nav-link, 
+header .dropdown-toggle, 
+header .dropdown-item {
+  color: #5a4d4d !important; /* White text for readability */
+}
+
+header a:hover, 
+header .nav-link:hover, 
+header .dropdown-toggle:hover, 
+header .dropdown-item:hover {
+  color: #292121 !important; /* Slightly lighter white for a soft hover effect */
+}
+
+.form-control {
+  background-color:whitesmoke;
+}

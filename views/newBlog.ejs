@@ -1,0 +1,19 @@
+<%- include ("partials/header.ejs")%>
+
+<h2> Give your story some wings to fly!</h2>
+
+<div class="newBlogContainer">
+    <div class="searchBoxContainer">
+      <form action="/submit" method="POST">
+        <textarea class="storyTitle" name="title" placeholder="Title of the story"></textarea>
+        <textarea class="searchBox" name="content" placeholder="Start typing here"></textarea>
+        <input class="shareButton" type="submit" value="Share Story">
+      </form>
+      
+    </div>
+
+    <div class="carouselContainer">
+      <%- include ("partials/carousel.ejs")%>
+    </div>
+
+</div>

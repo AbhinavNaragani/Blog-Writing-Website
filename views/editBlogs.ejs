@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<h2> Give your stories a new pair of Wings </h2>
+
+<div class="editBlogsContainer">
+<form action="/update" method="POST">
+  <!-- Pass the index to the backend -->
+
+  <input type="hidden" name="index" value="<%= index %>">
+
+  <label for="title"><h4>Title:</h4></label>
+  <input type="text" name="title" class="title-editBlogs" placeholder="Title" value="<%= blog.title %>" required>
+
+  <label class="contentLabel" for="content"><h4>Content of the story:</h4></label>
+  <textarea name="content" class="content-editBlogs" required><%= blog.content %></textarea>
+
+  <input type="submit" class="updateStoryButton" value="Update Story">
+</form>
+</div>

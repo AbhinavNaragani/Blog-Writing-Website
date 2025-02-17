@@ -1,0 +1,24 @@
+h2 {
+  color: #2A3D66;
+  text-align: center;
+  margin-top: 20px;
+  font-family: serif;
+}
+
+h4, p {
+  text-align: justify;
+  font-family: sans-serif;
+  line-height: 4vh;
+}
+
+h4 {
+  color: #4A628F;
+  font-weight: 500;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+
+

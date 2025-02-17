@@ -1,0 +1,134 @@
+/* CSS for newBlog.ejs */
+.newBlogContainer {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row; 
+  width: 100%;
+  justify-content: space-between; 
+  align-items: stretch;
+}
+
+.searchBoxContainer {
+  width: 50%; /* Takes half of the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+  height: 650px;
+}
+
+.searchBoxContainer form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; /* Ensure form fills the container */
+}
+
+.storyTitle {
+  width: 100%;
+  height: 50px;
+  border: solid 2px rgb(197, 196, 196);
+  border-radius: 10px;
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding-left: 10px;
+  padding-top: 7px;
+  line-height: 25px;
+}
+
+.searchBox {
+  width: 100%; /* Makes textarea fill 50% parent width */
+  height: 600px;
+  font-size: 16px;
+  padding: 10px;
+  border: solid 2px rgb(197, 196, 196);
+  border-radius: 10px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.shareButton, .updateStoryButton {
+  margin-top: 10px;
+  padding: 7px 15px;
+  display: block;
+  background-color: hsl(216, 61%, 53%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+}
+
+.carouselContainer {
+  width: 47%;
+  height: 600px; /* Matches the searchBoxContainer height */
+  display: flex;
+  justify-content: center; /* Center carousel */
+  align-items: center; /* Align vertically */
+  margin-left: 5px;
+  border-radius: 10px;
+  overflow: hidden; /* Prevents overflow */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container while maintaining proportions */
+}
+
+
+/* WrittenBlog.ejs css styling */
+
+.deleteButton, .editStory {
+  margin-bottom: 15px;
+  padding: 7px 15px;
+  display: block;
+  background-color: hsl(216, 61%, 53%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.editBlogsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.title-editBlogs, .content-editBlogs {
+  padding: 6px;
+  flex-grow: 1;
+  width: 100%;
+  height: 50px;
+  border: solid 2px rgb(197, 196, 196);
+  border-radius: 10px;
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding-left: 10px;
+  padding-top: 9xpx;
+  line-height: 25px;
+}
+
+.content-editBlogs {
+  padding-bottom: 400px;
+}
+
+.contentLabel {
+  margin-top: 10px;
+}
